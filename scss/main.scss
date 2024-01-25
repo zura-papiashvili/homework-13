@@ -26,16 +26,44 @@ body {
 
         li {
             margin: 10px 0;
-            background-color: $text-bg-dark;
-            border-radius: 10px 10px 10px 0;
-            padding: 10px;
-            width: 50%;
+
+            width: 70%;
             align-self: flex-start;
+            display: flex;
+            flex-direction: row;
+
+            align-items: end;
+
+            &.image {
+                .bubble {
+                    width: 100%;
+                    height: auto;
+                    padding: 0;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px 10px 10px 0;
+                    }
+                }
+            }
+
+            .bubble {
+                background-color: $text-bg-dark;
+                border-radius: 10px 10px 10px 0;
+                padding: 10px;
+
+
+
+            }
 
             &.right {
                 align-self: flex-end;
-                background-color: $text-bg-light;
-                border-radius: 10px 10px 0 10px;
+
+                .bubble {
+                    background-color: $text-bg-light;
+                    border-radius: 10px 10px 0 10px;
+                }
             }
 
             .message {
@@ -50,16 +78,13 @@ body {
                 color: $my-name-color;
             }
 
-            &.image {
-                width: 70%;
-                height: auto;
-                padding: 0;
 
-                & img {
-                    width: 100%;
-                    height: 100%;
-                    border-radius: 10px 10px 10px 0;
-                }
+
+            .avatar img {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                margin-right: 10px;
             }
         }
 

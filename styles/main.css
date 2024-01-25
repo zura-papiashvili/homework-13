@@ -19,14 +19,31 @@ body .chat ul {
 }
 body .chat li {
   margin: 10px 0;
+  width: 70%;
+  align-self: flex-start;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+body .chat li.image .bubble {
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+body .chat li.image .bubble img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 10px 0;
+}
+body .chat li .bubble {
   background-color: #2B2250;
   border-radius: 10px 10px 10px 0;
   padding: 10px;
-  width: 50%;
-  align-self: flex-start;
 }
 body .chat li.right {
   align-self: flex-end;
+}
+body .chat li.right .bubble {
   background-color: #6F61E8;
   border-radius: 10px 10px 0 10px;
 }
@@ -38,15 +55,11 @@ body .chat li .author {
   font-size: 0.8rem;
   color: #5B86B4;
 }
-body .chat li.image {
-  width: 70%;
-  height: auto;
-  padding: 0;
-}
-body .chat li.image img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px 10px 10px 0;
+body .chat li .avatar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=main.css.map */
