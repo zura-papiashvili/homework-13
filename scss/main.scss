@@ -1,7 +1,69 @@
 @use "variables" as *;
 
 
-body{
+body {
     background-color: $bg-color;
     color: $text-color;
+
+    li {
+        list-style: none;
+    }
+
+    ;
+
+    .chat {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            height: 80vh;
+            overflow-y: scroll;
+            padding: 0 20px;
+        }
+
+        li {
+            margin: 10px 0;
+            background-color: $text-bg-dark;
+            border-radius: 10px 10px 10px 0;
+            padding: 10px;
+            width: 50%;
+            align-self: flex-start;
+
+            &.right {
+                align-self: flex-end;
+                background-color: $text-bg-light;
+                border-radius: 10px 10px 0 10px;
+            }
+
+            .message {
+                font-size: 1.2rem;
+                color: $text-color;
+            }
+
+            ;
+
+            .author {
+                font-size: 0.8rem;
+                color: $my-name-color;
+            }
+
+            &.image {
+                width: 70%;
+                height: auto;
+                padding: 0;
+
+                & img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 10px 10px 10px 0;
+                }
+            }
+        }
+
+
+
+    }
 }

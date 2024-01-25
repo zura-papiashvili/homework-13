@@ -2,5 +2,51 @@ body {
   background-color: #1F1C38;
   color: #D4D2DB;
 }
+body li {
+  list-style: none;
+}
+body .chat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+body .chat ul {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 0 20px;
+}
+body .chat li {
+  margin: 10px 0;
+  background-color: #2B2250;
+  border-radius: 10px 10px 10px 0;
+  padding: 10px;
+  width: 50%;
+  align-self: flex-start;
+}
+body .chat li.right {
+  align-self: flex-end;
+  background-color: #6F61E8;
+  border-radius: 10px 10px 0 10px;
+}
+body .chat li .message {
+  font-size: 1.2rem;
+  color: #D4D2DB;
+}
+body .chat li .author {
+  font-size: 0.8rem;
+  color: #5B86B4;
+}
+body .chat li.image {
+  width: 70%;
+  height: auto;
+  padding: 0;
+}
+body .chat li.image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 10px 10px 0;
+}
 
 /*# sourceMappingURL=main.css.map */
