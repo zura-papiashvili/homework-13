@@ -23,7 +23,6 @@ body .chat li {
   align-self: flex-start;
   display: flex;
   flex-direction: row;
-  align-items: end;
 }
 body .chat li.image .bubble {
   width: 100%;
@@ -40,6 +39,14 @@ body .chat li .bubble {
   border-radius: 10px 10px 10px 0;
   padding: 10px;
 }
+body .chat li .bubble .message {
+  font-size: 1.2rem;
+  color: #D4D2DB;
+}
+body .chat li .bubble .author {
+  font-size: 0.8rem;
+  color: #5B86B4;
+}
 body .chat li.right {
   align-self: flex-end;
 }
@@ -55,11 +62,22 @@ body .chat li .author {
   font-size: 0.8rem;
   color: #5B86B4;
 }
-body .chat li .avatar img {
+body .chat li .avatar {
   width: 30px;
   height: 30px;
   border-radius: 50%;
   margin-right: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3498db;
+  /* Default blue color */
+}
+body .chat li .avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */
